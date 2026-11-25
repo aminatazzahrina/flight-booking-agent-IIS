@@ -18,15 +18,19 @@ Install Python 3 and the packages below. A Gemini API key is needed to launch th
 python -m pip install streamlit google-genai
 python -m streamlit run app.py
 
-Screenshots
+```
+
+## Screenshots
 - [Incomplete request](screenshots/incomplete-request.png)
 - [Ranked flight options](screenshots/ranked-options.png)
 - [Permission and passenger-details placeholder](screenshots/permission-step.png)
-Development record
+
+## Development record
 - Created a Streamlit interface and local sample-flight search.
 - Added clarification for missing details and vague dates.
 - Connected Gemini function calling and added ranked labels, explanations, flight selection, and a consent step.
 - Switched to Gemini 3.6 Flash after repeated service-unavailable errors with the earlier model.
 - Added offline previews so the interaction can be inspected without Gemini API requests. Checked both example requests, ranking, selection, and consent flow.
-AI assistance
+
+## AI assistance
 ChatGPT helped plan, write, revise, and debug the Python prototype and documentation. Gemini 3.6 Flash is the conversational model used by the app. I reviewed and changed suggested code, checked the complete and incomplete examples, and verified that sample fares and simulated steps are clearly labelled.
